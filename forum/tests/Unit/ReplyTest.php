@@ -10,6 +10,7 @@ class ReplyTest extends TestCase
 {
 
     use DatabaseMigrations;
+
     /**
      * @test
      */
