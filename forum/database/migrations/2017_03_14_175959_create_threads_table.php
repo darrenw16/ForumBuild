@@ -18,7 +18,6 @@ class CreateThreadsTable extends Migration
             $table->integer('user_id');
             $table->string('title');
             $table->text('body');
-
             $table->timestamps();
         });
     }

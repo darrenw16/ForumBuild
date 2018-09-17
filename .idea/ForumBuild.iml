@@ -55,9 +55,7 @@
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/finder" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/http-foundation" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/http-kernel" />
-      <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/polyfill-mbstring" />
-      <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/polyfill-php70" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/symfony/translation" />
