@@ -17,17 +17,13 @@ class RepliesController extends Controller
     /**
      * Persist a new reply.
      *
-     * @param         $channelId
-     * @param  Thread $thread
+     * @param  integer $channelId
+     * @param  Thread  $thread
      * @return \Illuminate\Http\RedirectResponse
      */
-
     public function store($channelId, Thread $thread)
     {
-
-        $this->validate(request(), [
-            'body' => 'required',
-        ]);
+        $this->validate(request(), ['body' => 'required']);
 
         $thread->addReply([
             'body' => request('body'),

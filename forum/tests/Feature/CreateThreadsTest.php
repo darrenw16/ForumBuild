@@ -17,9 +17,8 @@ class CreateThreadsTest extends TestCase
         $this->get('/threads/create')
             ->assertRedirect('/login');
 
-        $this->post('/threads', [])
+        $this->post('/threads')
             ->assertRedirect('/login');
-
     }
 
     /** @test */
@@ -41,8 +40,6 @@ class CreateThreadsTest extends TestCase
     {
         $this->publishThread(['title' => null])
             ->assertSessionHasErrors('title');
-
-
     }
 
     /** @test */
@@ -50,7 +47,6 @@ class CreateThreadsTest extends TestCase
     {
         $this->publishThread(['body' => null])
             ->assertSessionHasErrors('body');
-
     }
 
     /** @test */
@@ -61,13 +57,11 @@ class CreateThreadsTest extends TestCase
         $this->publishThread(['channel_id' => null])
             ->assertSessionHasErrors('channel_id');
 
-
         $this->publishThread(['channel_id' => 999])
             ->assertSessionHasErrors('channel_id');
-
     }
 
-    public function publishThread($overrides = [])
+    protected function publishThread($overrides = [])
     {
         $this->withExceptionHandling()->signIn();
 
