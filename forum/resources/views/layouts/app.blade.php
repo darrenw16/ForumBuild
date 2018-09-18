@@ -21,10 +21,9 @@
     </script>
 
     <style>
-        body { padding-bottom: 100px}
+        body { padding-bottom: 100px; }
         .level { display: flex; align-items: center; }
-        .flex { flex: 1 }
-
+        .flex { flex: 1; }
     </style>
 </head>
 <body>

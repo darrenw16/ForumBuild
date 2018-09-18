@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a href="#">{{ $thread->creator->name }}</a> posted:
+                        <a href="{{ route('profile', $thread->creator) }}">{{ $thread->creator->name }}</a> posted:
                         {{ $thread->title }}
                     </div>
 
@@ -42,8 +42,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <p>
-                            This thread was published {{$thread->created_at->diffForHumans()}} by
-                            <a href="#">{{ $thread->creator->name }}</a> and currently
+                            This thread was published {{ $thread->created_at->diffForHumans() }} by
+                            <a href="#">{{ $thread->creator->name }}</a>, and currently
                             has {{ $thread->replies_count }} {{ str_plural('comment', $thread->replies_count) }}.
                         </p>
                     </div>

@@ -4,29 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f95fc79d2d82f6bc11846bb4336e867",
+    "content-hash": "c5c7714d33195cce3d4b47c66a21a3a9",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v2.4.3",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "d7c88f08131f6404cb714f3f6cf0642f6afa3903"
+                "reference": "24e4f0261e352d3fd86d0447791b56ae49398674"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/d7c88f08131f6404cb714f3f6cf0642f6afa3903",
-                "reference": "d7c88f08131f6404cb714f3f6cf0642f6afa3903",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/24e4f0261e352d3fd86d0447791b56ae49398674",
+                "reference": "24e4f0261e352d3fd86d0447791b56ae49398674",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*",
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*",
                 "maximebf/debugbar": "~1.13.0",
                 "php": ">=5.5.9",
                 "symfony/finder": "~2.7|~3.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Barryvdh\\Debugbar\\": "src/"
@@ -53,7 +58,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2017-07-21T11:56:48+00:00"
+            "time": "2017-01-19T08:19:49+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2126,12 +2131,12 @@
             "version": "0.9.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mockery/mockery.git",
+                "url": "https://github.com/padraic/mockery.git",
                 "reference": "6fdb61243844dc924071d3404bb23994ea0b6856"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
                 "reference": "6fdb61243844dc924071d3404bb23994ea0b6856",
                 "shasum": ""
             },

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fdad80d-5d42-43ac-93c2-2ee35f2e68b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ForumBuild.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ForumBuild.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum/resources/views/profiles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum/tests/Feature/ProfilesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Http/Controllers/FavoritesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Http/Controllers/FavoritesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Thread.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/forum/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/forum/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,30 +31,30 @@
         <counts>
           <entry key="env" value="7" />
           <entry key="json" value="43" />
-          <entry key="php" value="10062" />
+          <entry key="php" value="11137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="7" />
-          <entry key="Blade" value="2474" />
+          <entry key="Blade" value="2950" />
           <entry key="JSON" value="43" />
-          <entry key="PHP" value="7588" />
+          <entry key="PHP" value="8187" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="1" />
           <entry key="json" value="2" />
-          <entry key="php" value="71" />
+          <entry key="php" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="Blade" value="10" />
+          <entry key="Blade" value="13" />
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="61" />
+          <entry key="PHP" value="69" />
         </counts>
       </usages-collector>
     </session>
@@ -65,91 +62,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/FavoritesController.php">
+        <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="300">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/FavoritesTest.php">
+        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="591">
+              <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Favorite.php">
+        <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ProfilesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="180">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/database/factories/ModelFactory.php">
+        <entry file="file://$PROJECT_DIR$/forum/app/Channel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Reply.php">
+        <entry file="file://$PROJECT_DIR$/forum/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="495">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/resources/views/profiles/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/forum/app/Favoritable.php">
+        <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="60">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
+        <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="345">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ThreadsController.php">
+        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ProfilesTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+            <state relative-caret-position="465">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -172,8 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/laradock/nginx/sites/fair-trading-rv-calculator.conf" />
-        <option value="$USER_HOME$/laradock/nginx/sites/forum.conf" />
         <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_14_010840_create_threads_table.php" />
         <option value="$PROJECT_DIR$/forum/.env.example" />
         <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_14_012611_create_replies_table.php" />
@@ -203,23 +198,28 @@
         <option value="$PROJECT_DIR$/forum/app/Channel.php" />
         <option value="$PROJECT_DIR$/forum/resources/views/threads/create.blade.php" />
         <option value="$PROJECT_DIR$/forum/app/Filters/Filters.php" />
-        <option value="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/views/threads/index.blade.php" />
         <option value="$PROJECT_DIR$/forum/app/Filters/ThreadFilters.php" />
         <option value="$PROJECT_DIR$/forum/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/forum/tests/utilities/functions.php" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php" />
-        <option value="$PROJECT_DIR$/forum/routes/web.php" />
         <option value="$PROJECT_DIR$/forum/app/Favorite.php" />
         <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_18_045527_create_favorites_table.php" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/FavoritesTest.php" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/FavoritesController.php" />
         <option value="$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php" />
         <option value="$PROJECT_DIR$/forum/app/Thread.php" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadsController.php" />
-        <option value="$PROJECT_DIR$/forum/app/Reply.php" />
         <option value="$PROJECT_DIR$/forum/app/Favoritable.php" />
+        <option value="$PROJECT_DIR$/forum/app/Reply.php" />
+        <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ProfileController.php" />
+        <option value="$PROJECT_DIR$/forum/tests/Feature/ProfilesTest.php" />
+        <option value="$PROJECT_DIR$/forum/app/User.php" />
+        <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ProfilesController.php" />
+        <option value="$PROJECT_DIR$/forum/routes/web.php" />
+        <option value="$PROJECT_DIR$/forum/resources/views/profiles/show.blade.php" />
+        <option value="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" />
+        <option value="$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php" />
       </list>
     </option>
   </component>
@@ -434,6 +434,14 @@
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="threads" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -515,12 +523,12 @@
       <updated>1536886590214</updated>
       <workItem from="1536886595695" duration="1443000" />
       <workItem from="1536888103106" duration="8943000" />
-      <workItem from="1536901888907" duration="39360000" />
+      <workItem from="1536901888907" duration="42369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49746000" />
+    <option name="totallyTimeSpent" value="52755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1210" height="1332" extended-state="0" />
@@ -547,28 +555,6 @@
       <window_info anchor="right" id="Scheme.REPL" order="3" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31389365" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32994527" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Scheme.REPL" order="3" side_tool="true" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -588,34 +574,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/projects/loveconnect/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/laradock/nginx/sites/forum.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/database/migrations/2018_09_14_012611_create_replies_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="33" selection-start-line="17" selection-start-column="12" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ThreadsTest.php" />
     <entry file="file://$PROJECT_DIR$/forum/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -748,13 +706,6 @@
     <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ChannelTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -762,27 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/User.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Channel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -827,20 +761,6 @@
     <entry file="file://$PROJECT_DIR$/forum/tests/Feature/Feature/FavoritesTest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/database/migrations/2018_09_18_045527_create_favorites_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -883,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -906,15 +819,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Reply.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Favoritable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="525">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Channel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ProfilesTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ProfilesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/resources/views/profiles/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>

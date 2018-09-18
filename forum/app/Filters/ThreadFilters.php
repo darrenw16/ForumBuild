@@ -27,9 +27,9 @@ class ThreadFilters extends Filters
     }
 
     /**
-     * Fitler the query according to most popular threads.
+     * Filter the query according to most popular threads.
      *
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @return $this
      */
     protected function popular()
     {

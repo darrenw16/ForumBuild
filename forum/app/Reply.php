@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Reply extends Model
 {
     use Favoritable;
+
     /**
      * Don't auto-apply mass assignment protection.
      *
@@ -14,6 +15,11 @@ class Reply extends Model
      */
     protected $guarded = [];
 
+    /**
+     * The relations to eager load on every query.
+     *
+     * @var array
+     */
     protected $with = ['owner', 'favorites'];
 
     /**
@@ -25,5 +31,4 @@ class Reply extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
-
 }
