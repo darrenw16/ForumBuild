@@ -62,6 +62,8 @@
       <path value="$PROJECT_DIR$/forum/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/forum/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/forum/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/forum/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/forum/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="PhpUnit">
