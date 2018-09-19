@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Filters\ThreadFilters;
+use function foo\func;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,6 +27,10 @@ class Thread extends Model
 
         static::addGlobalScope('replyCount', function ($builder) {
             $builder->withCount('replies');
+        });
+
+        static::deleting(function ($thread) {
+            $thread->replies()->delete();
         });
    }
 

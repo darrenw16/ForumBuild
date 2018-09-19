@@ -85,6 +85,26 @@ class ThreadsController extends Controller
     }
 
     /**
+     * Destory the specified thread.
+     *
+     * @param  integer     $channelId
+     * @param  \App\Thread $thread
+     * @return \Illuminate\Http\Response
+     */
+    public function destory($channelId, Thread $thread)
+    {
+        $thread->delete();
+
+        if(\request()->wantsJson()){
+            return response([], 204);
+        }
+
+
+        return redirect('/threads');
+    }
+
+
+    /**
      * Fetch all relevant threads.
      *
      * @param Channel       $channel
