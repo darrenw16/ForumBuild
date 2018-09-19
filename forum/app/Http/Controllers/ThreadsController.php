@@ -72,11 +72,11 @@ class ThreadsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  integer     $channelId
+     * @param  integer     $channel
      * @param  \App\Thread $thread
      * @return \Illuminate\Http\Response
      */
-    public function show($channelId, Thread $thread)
+    public function show($channel, Thread $thread)
     {
         return view('threads.show', [
             'thread' => $thread,
@@ -85,26 +85,24 @@ class ThreadsController extends Controller
     }
 
     /**
-     * Destory the specified thread.
+     * Delete the given thread.
      *
-     * @param  integer     $channelId
-     * @param  \App\Thread $thread
-     * @return \Illuminate\Http\Response
+     * @param        $channel
+     * @param Thread $thread
+     * @return mixed
      */
-    public function destory($channelId, Thread $thread)
+    public function destroy($channel, Thread $thread)
     {
         $this->authorize('update', $thread);
 
         $thread->delete();
 
-        if(\request()->wantsJson()){
+        if (request()->wantsJson()) {
             return response([], 204);
         }
 
-
         return redirect('/threads');
     }
-
 
     /**
      * Fetch all relevant threads.

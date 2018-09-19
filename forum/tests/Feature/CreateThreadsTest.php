@@ -62,19 +62,16 @@ class CreateThreadsTest extends TestCase
     }
 
     /** @test */
-    function unauthorized_users_cannot_delete_threads()
+    function unauthorized_users_may_not_delete_threads()
     {
         $this->withExceptionHandling();
 
         $thread = create('App\Thread');
 
-        $this->delete($thread->path())
-            ->assertRedirect('/login');
+        $this->delete($thread->path())->assertRedirect('/login');
 
         $this->signIn();
-        $this->delete($thread->path())
-            ->assertStatus(403);
-
+        $this->delete($thread->path())->assertStatus(403);
     }
 
     /** @test */
