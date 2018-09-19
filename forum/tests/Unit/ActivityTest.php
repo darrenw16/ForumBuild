@@ -59,4 +59,6 @@ class ActivityTest extends TestCase
             Carbon::now()->subWeek()->format('Y-m-d')
         ));
     }
+
+
 }
