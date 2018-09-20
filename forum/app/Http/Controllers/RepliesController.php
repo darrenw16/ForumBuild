@@ -27,7 +27,7 @@ class RepliesController extends Controller
         $this->validate(request(), ['body' => 'required']);
 
         $thread->addReply([
-            'body' => request('body'),
+            'body'    => request('body'),
             'user_id' => auth()->id()
         ]);
 
@@ -59,6 +59,11 @@ class RepliesController extends Controller
         $this->authorize('update', $reply);
 
         $reply->delete();
+
+        if (request()->expectsJson()) {
+            return response(['status' => "Reply deleted"]);
+
+        }
 
         return back();
     }
