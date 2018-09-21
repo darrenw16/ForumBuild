@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fdad80d-5d42-43ac-93c2-2ee35f2e68b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Thread.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/forum/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forum/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,19 +37,19 @@
           <entry key="env" value="7" />
           <entry key="js" value="431" />
           <entry key="json" value="46" />
-          <entry key="php" value="19479" />
-          <entry key="vue" value="4480" />
+          <entry key="php" value="19974" />
+          <entry key="vue" value="4997" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="7" />
-          <entry key="Blade" value="4959" />
+          <entry key="Blade" value="5075" />
           <entry key="JSON" value="46" />
           <entry key="JavaScript" value="431" />
-          <entry key="PHP" value="14520" />
+          <entry key="PHP" value="14899" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Vue.js" value="4480" />
+          <entry key="Vue.js" value="4997" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,20 +57,20 @@
           <entry key="env" value="1" />
           <entry key="js" value="9" />
           <entry key="json" value="4" />
-          <entry key="php" value="165" />
+          <entry key="php" value="174" />
           <entry key="txt" value="1" />
-          <entry key="vue" value="13" />
+          <entry key="vue" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="Blade" value="34" />
+          <entry key="Blade" value="36" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="131" />
+          <entry key="PHP" value="138" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Vue.js" value="10" />
+          <entry key="Vue.js" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -77,10 +83,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ParticipateInThreadsTest.php">
+        <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/SubscribeButton.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -88,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+            <state relative-caret-position="435">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -98,52 +131,7 @@
         <entry file="file://$PROJECT_DIR$/forum/app/ThreadSubscription.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/FavoritesTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -151,17 +139,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="510">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Reply.php">
+        <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="585">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/pages/Thread.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="e#14#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -195,7 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/forum/app/Policies/ThreadPolicy.php" />
         <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_19_013010_create_activities_table.php" />
         <option value="$PROJECT_DIR$/forum/app/Activity.php" />
         <option value="$PROJECT_DIR$/forum/resources/views/profiles/activities/activity.blade.php" />
@@ -219,12 +227,10 @@
         <option value="$PROJECT_DIR$/forum/resources/views/profiles/show.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/page/Thread.vue" />
-        <option value="$PROJECT_DIR$/forum/resources/assets/js/pages/Thread.vue" />
         <option value="$PROJECT_DIR$/forum/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/forum/app/User.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/Reply.vue" />
-        <option value="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadsController.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/mixins/Collection.js" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/app.js" />
@@ -237,15 +243,18 @@
         <option value="$PROJECT_DIR$/forum/database/migrations/2017_03_14_175959_create_threads_table.php" />
         <option value="$PROJECT_DIR$/forum/app/Reply.php" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/ParticipateInThreadsTest.php" />
-        <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php" />
         <option value="$PROJECT_DIR$/forum/app/ThreadSubscription.php" />
-        <option value="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" />
-        <option value="$PROJECT_DIR$/forum/app/Thread.php" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreads.php" />
-        <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php" />
-        <option value="$PROJECT_DIR$/forum/routes/web.php" />
+        <option value="$PROJECT_DIR$/forum/resources/assets/js/pages/Thread.vue" />
+        <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php" />
+        <option value="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" />
+        <option value="$PROJECT_DIR$/forum/app/Thread.php" />
+        <option value="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" />
+        <option value="$PROJECT_DIR$/forum/resources/assets/js/components/SubscribeButton.vue" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" />
+        <option value="$PROJECT_DIR$/forum/routes/web.php" />
+        <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php" />
       </list>
     </option>
   </component>
@@ -642,12 +651,12 @@
       <workItem from="1536886595695" duration="1443000" />
       <workItem from="1536888103106" duration="8943000" />
       <workItem from="1536901888907" duration="84143000" />
-      <workItem from="1537484947996" duration="12180000" />
+      <workItem from="1537484947996" duration="14548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106709000" />
+    <option name="totallyTimeSpent" value="109077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1210" height="1332" extended-state="0" />
@@ -657,7 +666,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -683,7 +692,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forum/database/migrations/2018_09_19_013010_create_activities_table.php" />
     <entry file="file://$PROJECT_DIR$/forum/resources/views/profiles/activities/activity.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -816,20 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/Favorite.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/Flash.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -841,13 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/pages/Thread.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -865,13 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -973,34 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/ThreadSubscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ReadThreadsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1015,24 +967,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php">
+    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/Flash.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/Favorite.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/pages/Thread.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/ThreadSubscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/resources/views/threads/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/SubscribeButton.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
