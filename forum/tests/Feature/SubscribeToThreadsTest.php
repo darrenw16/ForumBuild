@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class SubscribeToThreadsTest extends TestCase
 {
@@ -18,13 +18,7 @@ class SubscribeToThreadsTest extends TestCase
 
         $this->post($thread->path() . '/subscriptions');
 
-        $thread->addReply([
-            'user_id' => auth()->id(),
-            'body'    => 'Some reply here'
-        ]);
-
-
-        //$this->assertCount(1,auth()->user()->notifications);
+        $this->assertCount(1, $thread->fresh()->subscriptions);
 
     }
 
@@ -35,16 +29,10 @@ class SubscribeToThreadsTest extends TestCase
 
         $thread = create('App\Thread');
 
+        $thread->subscribe();
+
         $this->delete($thread->path() . '/subscriptions');
 
-        $thread->addReply([
-            'user_id' => auth()->id(),
-            'body'    => 'Some reply here'
-        ]);
-
-
-        $this->assertCount(0 , $thread->subscriptions);
-
+        $this->assertCount(0, $thread->subscriptions);
     }
-
 }

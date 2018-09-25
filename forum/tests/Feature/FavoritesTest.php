@@ -30,7 +30,7 @@ class FavoritesTest extends TestCase
     }
 
     /** @test */
-    public function an_authenticated_user_can_unfavorite_any_reply()
+    public function an_authenticated_user_can_unfavorite_a_reply()
     {
         $this->signIn();
 

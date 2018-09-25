@@ -18289,12 +18289,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['reply'],
+
     data: function data() {
         return {
             count: this.reply.favoritesCount,
             active: this.reply.isFavorited
         };
     },
+
 
     computed: {
         classes: function classes() {
@@ -18304,17 +18306,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return '/replies/' + this.reply.id + '/favorites';
         }
     },
+
     methods: {
         toggle: function toggle() {
             this.active ? this.destroy() : this.create();
         },
         create: function create() {
             axios.post(this.endpoint);
+
             this.active = true;
             this.count++;
         },
         destroy: function destroy() {
             axios.delete(this.endpoint);
+
             this.active = false;
             this.count--;
         }
@@ -18402,6 +18407,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -18426,7 +18433,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
                 _this.body = '';
 
-                flash('Your reply has been posted');
+                flash('Your reply has been posted.');
 
                 _this.$emit('created', data);
             });
@@ -18455,14 +18462,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ["dataSet"],
+    props: ['dataSet'],
 
     data: function data() {
         return {
@@ -18510,7 +18512,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Reply_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Reply_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewReply_vue__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewReply_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NewReply_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_Collection__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins_collection__ = __webpack_require__(164);
 //
 //
 //
@@ -18529,15 +18531,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-
     components: { Reply: __WEBPACK_IMPORTED_MODULE_0__Reply_vue___default.a, NewReply: __WEBPACK_IMPORTED_MODULE_1__NewReply_vue___default.a },
 
-    mixins: [__WEBPACK_IMPORTED_MODULE_2__mixins_Collection__["a" /* default */]],
+    mixins: [__WEBPACK_IMPORTED_MODULE_2__mixins_collection__["a" /* default */]],
 
     data: function data() {
-        return {
-            dataSet: false
-        };
+        return { dataSet: false };
     },
     created: function created() {
         this.fetch();
@@ -18554,6 +18553,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
                 page = query ? query[1] : 1;
             }
+
             return location.pathname + '/replies?page=' + page;
         },
         refresh: function refresh(_ref) {
@@ -18577,9 +18577,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Favorite_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Favorite_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
-//
-//
-//
 //
 //
 //
@@ -18707,13 +18704,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Replies_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Replies_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SubscribeButton_vue__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_SubscribeButton_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_SubscribeButton_vue__);
-//
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['initialRepliesCount'],
+
     components: { Replies: __WEBPACK_IMPORTED_MODULE_0__components_Replies_vue___default.a, SubscribeButton: __WEBPACK_IMPORTED_MODULE_1__components_SubscribeButton_vue___default.a },
 
     data: function data() {
@@ -18748,8 +18745,8 @@ __webpack_require__(165);
 
 window.Vue = __webpack_require__(191);
 
-window.Vue.prototype.authorize = function (handler) {
-
+Vue.prototype.authorize = function (handler) {
+  // Additional admin privileges here.
   var user = window.App.user;
 
   return user ? handler(user) : false;
@@ -18767,21 +18764,6 @@ window.axios.defaults.headers.common = {
   'X-CSRF-TOKEN': window.App.csrfToken,
   'X-Requested-With': 'XMLHttpRequest'
 };
-
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
- */
-
-// import Echo from 'laravel-echo'
-
-// window.Pusher = require('pusher-js');
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
 
 window.events = new Vue();
 
@@ -18811,7 +18793,7 @@ window.flash = function (message) {
         remove: function remove(index) {
             this.items.splice(index, 1);
 
-            this.$emit("removed");
+            this.$emit('removed');
         }
     }
 });
@@ -49622,60 +49604,48 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       rawName: "v-show",
       value: (_vm.prevUrl),
       expression: "prevUrl"
-    }],
-    staticClass: "page-item",
+    }]
+  }, [_c('a', {
+    attrs: {
+      "href": "#",
+      "aria-label": "Previous",
+      "rel": "prev"
+    },
     on: {
       "click": function($event) {
         $event.preventDefault();
         _vm.page--
       }
     }
-  }, [_vm._m(0)]), _vm._v(" "), _c('li', {
+  }, [_c('span', {
+    attrs: {
+      "aria-hidden": "true"
+    }
+  }, [_vm._v("« Previous")])])]), _vm._v(" "), _c('li', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.nextUrl),
       expression: "nextUrl"
-    }],
-    staticClass: "page-item",
+    }]
+  }, [_c('a', {
+    attrs: {
+      "href": "#",
+      "aria-label": "Next",
+      "rel": "next"
+    },
     on: {
       "click": function($event) {
         $event.preventDefault();
         _vm.page++
       }
     }
-  }, [_vm._m(1)])]) : _vm._e()
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#",
-      "aria-label": "Previous",
-      "rel": "prev"
-    }
   }, [_c('span', {
     attrs: {
       "aria-hidden": "true"
     }
-  }, [_vm._v("« Previous")]), _vm._v(" "), _c('span', {
-    staticClass: "sr-only"
-  }, [_vm._v("Previous")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#",
-      "aria-label": "Next",
-      "rel": "next"
-    }
-  }, [_c('span', {
-    attrs: {
-      "aria-hidden": "true"
-    }
-  }, [_vm._v("Next » ")]), _vm._v(" "), _c('span', {
-    staticClass: "sr-only"
-  }, [_vm._v("Next")])])
-}]}
+  }, [_vm._v("Next »")])])])]) : _vm._e()
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -49712,7 +49682,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "panel panel-default",
     attrs: {
-      "id": "'reply-' +id "
+      "id": 'reply-' + _vm.id
     }
   }, [_c('div', {
     staticClass: "panel-heading"
@@ -49722,7 +49692,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "flex"
   }, [_c('a', {
     attrs: {
-      "href": "'/profiles/' + data.owner.name"
+      "href": '/profiles/' + _vm.data.owner.name
     },
     domProps: {
       "textContent": _vm._s(_vm.data.owner.name)
@@ -49731,11 +49701,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     domProps: {
       "textContent": _vm._s(_vm.ago)
     }
-  })]), _vm._v(" "), (_vm.signedIn) ? _c('div', [_c('div', [_c('favorite', {
+  })]), _vm._v(" "), (_vm.signedIn) ? _c('div', [_c('favorite', {
     attrs: {
       "reply": _vm.data
     }
-  })], 1)]) : _vm._e()])]), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e()])]), _vm._v(" "), _c('div', {
     staticClass: "panel-body"
   }, [(_vm.editing) ? _c('div', [_c('div', {
     staticClass: "form-group"
@@ -49801,7 +49771,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.signedIn) ? _c('div', [_c('div', {
+  return _c('div', [(_vm.signedIn) ? _c('div', [_c('div', {
     staticClass: "form-group"
   }, [_c('textarea', {
     directives: [{
@@ -49837,11 +49807,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Post")])]) : _c('p', {
     staticClass: "text-center"
-  }, [_vm._v("Please "), _c('a', {
+  }, [_vm._v("\n        Please "), _c('a', {
     attrs: {
       "href": "/login"
     }
-  }, [_vm._v("sign in")]), _vm._v(" to participate in this\ndiscussion.")])
+  }, [_vm._v("sign in")]), _vm._v(" to participate in this\n        discussion.\n    ")])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

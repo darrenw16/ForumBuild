@@ -58,17 +58,6 @@ class ReadThreadsTest extends TestCase
     }
 
     /** @test */
-    function a_user_can_filter_threads_by_those_that_are_unanswered()
-    {
-        $thread = create('App\Thread');
-        create('App\Reply', ['thread_id' => $thread->id ]);
-
-        $response = $this->getJson('threads?unanswered=1')->json();
-
-        $this->assertCount(1, $response);
-    }
-
-    /** @test */
     function a_user_can_filter_threads_by_popularity()
     {
         $threadWithTwoReplies = create('App\Thread');
@@ -85,14 +74,25 @@ class ReadThreadsTest extends TestCase
     }
 
     /** @test */
-    function a_user_can_request_all_replies_for_a_given_thead()
+    function a_user_can_filter_threads_by_those_that_are_unanswered()
     {
-       $thread = create('App\Thread');
-       create('App\Reply', ['thread_id' => $thread->id], 2);
+        $thread = create('App\Thread');
+        create('App\Reply', ['thread_id' => $thread->id]);
 
-       $response = $this->getJson($thread->path() . '/replies')->json();
+        $response = $this->getJson('threads?unanswered=1')->json();
 
-       $this->assertCount(2,$response['data']);
-       $this->assertEquals(2,$response['total']);
+        $this->assertCount(1, $response);
+    }
+
+    /** @test */
+    function a_user_can_request_all_replies_for_a_given_thread()
+    {
+        $thread = create('App\Thread');
+        create('App\Reply', ['thread_id' => $thread->id], 2);
+
+        $response = $this->getJson($thread->path() . '/replies')->json();
+
+        $this->assertCount(2, $response['data']);
+        $this->assertEquals(2, $response['total']);
     }
 }

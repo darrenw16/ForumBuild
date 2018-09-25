@@ -16,7 +16,10 @@ class RepliesController extends Controller
     }
 
     /**
-     * get all
+     * Fetch all relevant replies.
+     *
+     * @param int    $channelId
+     * @param Thread $thread
      */
     public function index($channelId, Thread $thread)
     {
@@ -35,7 +38,7 @@ class RepliesController extends Controller
         $this->validate(request(), ['body' => 'required']);
 
         $reply = $thread->addReply([
-            'body'    => request('body'),
+            'body' => request('body'),
             'user_id' => auth()->id()
         ]);
 
@@ -73,8 +76,7 @@ class RepliesController extends Controller
         $reply->delete();
 
         if (request()->expectsJson()) {
-            return response(['status' => "Reply deleted"]);
-
+            return response(['status' => 'Reply deleted']);
         }
 
         return back();

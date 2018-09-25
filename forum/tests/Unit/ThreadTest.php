@@ -66,12 +66,11 @@ class ThreadTest extends TestCase
     {
         $thread = create('App\Thread');
 
-        $this->signIn();
+        $thread->subscribe($userId = 1);
 
-        $thread->subscribe();
-
-        $this->assertEquals(1,
-            $thread->subscriptions()->where('user_id', auth()->id())->count()
+        $this->assertEquals(
+            1,
+            $thread->subscriptions()->where('user_id', $userId)->count()
         );
     }
 
@@ -80,25 +79,24 @@ class ThreadTest extends TestCase
     {
         $thread = create('App\Thread');
 
-        $this->signIn();
+        $thread->subscribe($userId = 1);
 
-        $thread->unsubscribe();
+        $thread->unsubscribe($userId);
 
-        $this->assertEquals(0, $thread->subscriptions()->count());
+        $this->assertCount(0, $thread->subscriptions);
     }
 
     /** @test */
-    function it_knows_if_the_authenticated_users_is_subscribed_to_it()
+    function it_knows_if_the_authenticated_user_is_subscribed_to_it()
     {
         $thread = create('App\Thread');
 
         $this->signIn();
 
-        $this->assertFalse($thread->isSubscribedTo());
+        $this->assertFalse($thread->isSubscribedTo);
 
         $thread->subscribe();
 
-        $this->assertTrue($thread->isSubscribedTo());
-
+        $this->assertTrue($thread->isSubscribedTo);
     }
 }
