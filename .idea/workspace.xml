@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fdad80d-5d42-43ac-93c2-2ee35f2e68b5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forum/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Thread.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +31,7 @@
           <entry key="env" value="7" />
           <entry key="js" value="470" />
           <entry key="json" value="46" />
-          <entry key="php" value="22043" />
+          <entry key="php" value="22503" />
           <entry key="vue" value="5678" />
         </counts>
       </usages-collector>
@@ -39,7 +41,7 @@
           <entry key="Blade" value="5096" />
           <entry key="JSON" value="46" />
           <entry key="JavaScript" value="470" />
-          <entry key="PHP" value="16947" />
+          <entry key="PHP" value="17407" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Vue.js" value="5678" />
         </counts>
@@ -49,7 +51,7 @@
           <entry key="env" value="1" />
           <entry key="js" value="10" />
           <entry key="json" value="4" />
-          <entry key="php" value="191" />
+          <entry key="php" value="195" />
           <entry key="txt" value="1" />
           <entry key="vue" value="21" />
         </counts>
@@ -60,7 +62,7 @@
           <entry key="Blade" value="37" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="154" />
+          <entry key="PHP" value="158" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Vue.js" value="18" />
         </counts>
@@ -74,24 +76,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Feature/NotiticationsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/resources/views/layouts/nav.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,37 +113,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/database/factories/ModelFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Listeners/NotifyThreadSubscribers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
+        <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+            <state relative-caret-position="518">
+              <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Events/ThreadHasNewReply.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -194,9 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/forum/tests/Unit/ActivityTest.php" />
-        <option value="$PROJECT_DIR$/forum/app/RecordsActivity.php" />
-        <option value="$PROJECT_DIR$/forum/tests/Feature/CreateThreadsTest.php" />
         <option value="$PROJECT_DIR$/forum/package.json" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/Flash.vue" />
         <option value="$PROJECT_DIR$/forum/resources/views/profiles/activities/created_favorited.blade.php" />
@@ -229,7 +228,6 @@
         <option value="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreads.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/pages/Thread.vue" />
         <option value="$PROJECT_DIR$/forum/database/migrations/2018_09_21_052104_create_thread_subscriptions_table.php" />
-        <option value="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" />
         <option value="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/SubscribeButton.vue" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php" />
@@ -244,7 +242,11 @@
         <option value="$PROJECT_DIR$/forum/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/forum/app/Notifications/ThreadWasUpdated.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/UserNotifications.vue" />
+        <option value="$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php" />
+        <option value="$PROJECT_DIR$/forum/app/Events/ThreadHasNewReply.php" />
         <option value="$PROJECT_DIR$/forum/app/Thread.php" />
+        <option value="$PROJECT_DIR$/forum/app/Listeners/NotifyThreadSubscribers.php" />
+        <option value="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" />
       </list>
     </option>
   </component>
@@ -411,30 +413,14 @@
               <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Filters" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
               <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="Listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
@@ -648,12 +634,12 @@
       <workItem from="1536886595695" duration="1443000" />
       <workItem from="1536888103106" duration="8943000" />
       <workItem from="1536901888907" duration="84143000" />
-      <workItem from="1537484947996" duration="28027000" />
+      <workItem from="1537484947996" duration="30856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122556000" />
+    <option name="totallyTimeSpent" value="125385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1210" height="1340" extended-state="0" />
@@ -689,23 +675,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forum/notes.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/views/profiles/activities/created_favorite.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/resources/views/profiles/activities/created_reply.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -968,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1041,14 +1003,42 @@
     <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Events/ThreadHasNewReply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+        <state relative-caret-position="242">
+          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Listeners/NotifyThreadSubscribers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
         </state>
       </provider>
     </entry>
