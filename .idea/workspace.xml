@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fdad80d-5d42-43ac-93c2-2ee35f2e68b5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Notifications/ThreadWasUpdated.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Notifications/ThreadWasUpdated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/forum/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/resources/assets/js/components/UserNotifications.vue" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/assets/js/components/UserNotifications.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/views/layouts/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Thread.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +29,7 @@
           <entry key="env" value="7" />
           <entry key="js" value="470" />
           <entry key="json" value="46" />
-          <entry key="php" value="22004" />
+          <entry key="php" value="22043" />
           <entry key="vue" value="5678" />
         </counts>
       </usages-collector>
@@ -43,7 +39,7 @@
           <entry key="Blade" value="5096" />
           <entry key="JSON" value="46" />
           <entry key="JavaScript" value="470" />
-          <entry key="PHP" value="16908" />
+          <entry key="PHP" value="16947" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Vue.js" value="5678" />
         </counts>
@@ -53,7 +49,7 @@
           <entry key="env" value="1" />
           <entry key="js" value="10" />
           <entry key="json" value="4" />
-          <entry key="php" value="190" />
+          <entry key="php" value="191" />
           <entry key="txt" value="1" />
           <entry key="vue" value="21" />
         </counts>
@@ -64,7 +60,7 @@
           <entry key="Blade" value="37" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="153" />
+          <entry key="PHP" value="154" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Vue.js" value="18" />
         </counts>
@@ -114,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/UserNotifications.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="390">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -154,16 +150,16 @@
         <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="379">
+              <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -237,7 +233,6 @@
         <option value="$PROJECT_DIR$/forum/resources/views/threads/show.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/SubscribeButton.vue" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php" />
-        <option value="$PROJECT_DIR$/forum/app/Thread.php" />
         <option value="$PROJECT_DIR$/forum/app/ThreadSubscription.php" />
         <option value="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/UserNotifications.php" />
@@ -249,6 +244,7 @@
         <option value="$PROJECT_DIR$/forum/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/forum/app/Notifications/ThreadWasUpdated.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/UserNotifications.vue" />
+        <option value="$PROJECT_DIR$/forum/app/Thread.php" />
       </list>
     </option>
   </component>
@@ -652,12 +648,12 @@
       <workItem from="1536886595695" duration="1443000" />
       <workItem from="1536888103106" duration="8943000" />
       <workItem from="1536901888907" duration="84143000" />
-      <workItem from="1537484947996" duration="27562000" />
+      <workItem from="1537484947996" duration="28027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122091000" />
+    <option name="totallyTimeSpent" value="122556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1210" height="1340" extended-state="0" />
@@ -923,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="113" column="63" lean-forward="true" selection-start-line="113" selection-start-column="63" selection-end-line="113" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/ThreadSubscriptionsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1007,13 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/database/factories/ModelFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -1051,8 +1033,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/UserNotifications.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="390">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Thread.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
         </state>
       </provider>
     </entry>
