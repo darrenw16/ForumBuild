@@ -24,13 +24,13 @@ class ThreadWasUpdated extends Notification
     public function __construct($thread, $reply)
     {
         $this->thread = $thread;
-        $this->reply = $reply;
+        $this->reply  = $reply;
     }
 
     /**
      * Get the notification's delivery channels.
      *
-     * @param  mixed  $notifiable
+     * @param  mixed $notifiable
      * @return array
      */
     public function via($notifiable)
@@ -41,13 +41,14 @@ class ThreadWasUpdated extends Notification
     /**
      * Get the array representation of the notification.
      *
-     * @param  mixed  $notifiable
+     * @param  mixed $notifiable
      * @return array
      */
     public function toArray($notifiable)
     {
         return [
-            'message' => 'Temporary placeholder'
+            'message' => $this->reply->owner->name . ' replied to ' . $this->thread->title,
+            'link'    => $this->reply->path()
         ];
     }
 }
