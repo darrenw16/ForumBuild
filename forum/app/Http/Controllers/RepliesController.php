@@ -38,7 +38,7 @@ class RepliesController extends Controller
     public function store($channelId, Thread $thread, CreatePostRequest $form)
     {
         return $thread->addReply([
-            'body' => request('body'),
+            'body'    => request('body'),
             'user_id' => auth()->id()
         ])->load('owner');
     }
