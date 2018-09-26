@@ -2,40 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fdad80d-5d42-43ac-93c2-2ee35f2e68b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/forum/app/Inspections/InvalidKeywords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum/app/Inspections/KeyHeldDown.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum/app/Inspections/Spam.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum/tests/Unit/SpamTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum/tests/Unit/UserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum/app/Exceptions/ThrottleException.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Events/ThreadHasNewReply.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Http/Controllers/ThreadsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Http/Controllers/UserNotificationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Listeners/NotifyThreadSubscribers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Notifications/ThreadWasUpdated.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Notifications/ThreadWasUpdated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Policies/ReplyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Policies/ReplyPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/Thread.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/ThreadSubscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/ThreadSubscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/database/factories/ModelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/database/factories/ModelFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/database/migrations/2018_09_24_233148_create_notifications_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/forum/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/forum/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/forum/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/forum/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/forum/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/views/layouts/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/resources/views/threads/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/resources/views/threads/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/Feature/NotiticationsTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/Feature/ParticipateInThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Feature/ParticipateInThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Feature/SubscribeToThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/Unit/ReplyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Unit/ReplyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/forum/tests/Unit/ThreadTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +28,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
+          <entry key="dummy" value="5" />
           <entry key="env" value="7" />
           <entry key="js" value="504" />
           <entry key="json" value="49" />
-          <entry key="php" value="25874" />
+          <entry key="php" value="26222" />
           <entry key="vue" value="5880" />
         </counts>
       </usages-collector>
@@ -72,17 +42,18 @@
           <entry key="Blade" value="5183" />
           <entry key="JSON" value="49" />
           <entry key="JavaScript" value="504" />
-          <entry key="PHP" value="20691" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PHP" value="21039" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="Vue.js" value="5880" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="ThrottleExcaption" value="1" />
           <entry key="env" value="1" />
           <entry key="js" value="11" />
           <entry key="json" value="5" />
-          <entry key="php" value="215" />
+          <entry key="php" value="217" />
           <entry key="txt" value="1" />
           <entry key="vue" value="24" />
         </counts>
@@ -93,8 +64,8 @@
           <entry key="Blade" value="38" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="11" />
-          <entry key="PHP" value="177" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PHP" value="179" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="Vue.js" value="21" />
         </counts>
       </usages-collector>
@@ -107,20 +78,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="447">
+              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forum/app/Exceptions/Handler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/Providers/AppServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/forum/app/Http/Forms/CreatePostForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="465">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum/app/Exceptions/ThrottleException.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -128,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ParticipateInThreadsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="1305">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
@@ -138,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ReplyTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -147,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/forum/app/Reply.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="907">
-              <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+              <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -158,28 +147,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum/app/Policies/ReplyPolicy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum/tests/Unit/UserTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="60" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="60" />
+            <state relative-caret-position="450">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -217,6 +188,7 @@
       <find>isSubscribedTo</find>
       <find>App\Spam</find>
       <find>Spam</find>
+      <find>replies_that_contain_spam_may_not_be_created</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,9 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/forum/resources/views/threads/reply.blade.php" />
-        <option value="$PROJECT_DIR$/forum/resources/assets/js/page/Thread.vue" />
-        <option value="$PROJECT_DIR$/forum/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/mixins/Collection.js" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/Paginator.vue" />
         <option value="$PROJECT_DIR$/forum/resources/assets/js/components/Replies.vue" />
@@ -275,7 +244,10 @@
         <option value="$PROJECT_DIR$/forum/app/Reply.php" />
         <option value="$PROJECT_DIR$/forum/tests/Unit/ReplyTest.php" />
         <option value="$PROJECT_DIR$/forum/app/Policies/ReplyPolicy.php" />
+        <option value="$PROJECT_DIR$/forum/app/Exceptions/ThrottleExcaption.php" />
+        <option value="$PROJECT_DIR$/forum/app/Http/Forms/CreatePostForm.php" />
         <option value="$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php" />
+        <option value="$PROJECT_DIR$/forum/app/Exceptions/Handler.php" />
       </list>
     </option>
   </component>
@@ -362,7 +334,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1210" />
+    <option name="width" value="1285" />
     <option name="height" value="1340" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -442,6 +414,13 @@
               <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -451,6 +430,14 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ForumBuild" type="462c0819:PsiDirectoryNode" />
+              <item name="forum" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ForumBuild" type="b2602c69:ProjectViewProjectNode" />
@@ -631,6 +618,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/forum/app/Http/Forms" />
       <recent name="$PROJECT_DIR$/forum/app/Inspections" />
       <recent name="$PROJECT_DIR$/forum/tests/Feature" />
       <recent name="$PROJECT_DIR$/forum/resources/views/threads" />
@@ -672,18 +660,18 @@
       <workItem from="1536886595695" duration="1443000" />
       <workItem from="1536888103106" duration="8943000" />
       <workItem from="1536901888907" duration="84143000" />
-      <workItem from="1537484947996" duration="41807000" />
+      <workItem from="1537484947996" duration="44462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136336000" />
+    <option name="totallyTimeSpent" value="138991000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1210" height="1340" extended-state="0" />
+    <frame x="0" y="23" width="1285" height="1340" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3198971" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30056405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -713,34 +701,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/Paginator.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="e#240#247#1" expanded="true" />
-            <element signature="e#722#729#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/resources/assets/js/components/Replies.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
-          <folding>
-            <element signature="e#271#303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/database/migrations/2017_03_14_175959_create_threads_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Filters/ThreadFilters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1017,7 +977,7 @@
     <entry file="file://$PROJECT_DIR$/forum/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1034,14 +994,42 @@
     <entry file="file://$PROJECT_DIR$/forum/tests/Unit/ReplyTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Reply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="907">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Policies/ReplyPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forum/tests/Feature/ParticipateInThreadsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="1305">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Exceptions/ThrottleException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Http/Forms/CreatePostForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1052,24 +1040,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Reply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum/app/Policies/ReplyPolicy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum/app/Http/Controllers/RepliesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="447">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum/app/Exceptions/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>

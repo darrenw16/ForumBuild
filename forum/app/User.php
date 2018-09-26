@@ -16,9 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'name', 'email', 'password',
     ];
 
     /**
@@ -27,9 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
-        'remember_token',
-        'email',
+        'password', 'remember_token', 'email',
     ];
 
     /**
@@ -52,6 +48,11 @@ class User extends Authenticatable
         return $this->hasMany(Thread::class)->latest();
     }
 
+    /**
+     * Fetch the last published reply for the user.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function lastReply()
     {
         return $this->hasOne(Reply::class)->latest();
