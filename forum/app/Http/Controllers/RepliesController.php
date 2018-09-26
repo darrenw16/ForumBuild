@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Reply;
 use App\Thread;
+use \Illuminate\Support\Facades\Gate;
 
 class RepliesController extends Controller
 {
@@ -31,22 +32,27 @@ class RepliesController extends Controller
      *
      * @param  integer $channelId
      * @param  Thread  $thread
-     * @return \Illuminate\Http\RedirectResponse
+     * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Http\RedirectResponse
      */
     public function store($channelId, Thread $thread)
     {
-        $this->validate(request(), ['body' => 'required']);
+        if (Gate::denies('create', new Reply)) {
+            return response('Your are posting to frequently. Please take a break', 422);
+        }
+        try {
+            $this->validate(request(), ['body' => 'required|spamfree']);
 
-        $reply = $thread->addReply([
-            'body' => request('body'),
-            'user_id' => auth()->id()
-        ]);
-
-        if (request()->expectsJson()) {
-            return $reply->load('owner');
+            $reply = $thread->addReply([
+                'body'    => request('body'),
+                'user_id' => auth()->id()
+            ]);
+        } catch (\Exception $e) {
+            return response(
+                'Sorry, your reply could not be saved at this time.', 422
+            );
         }
 
-        return back()->with('flash', 'Your reply has been left.');
+        return $reply->load('owner');
     }
 
     /**
@@ -58,9 +64,16 @@ class RepliesController extends Controller
     {
         $this->authorize('update', $reply);
 
-        $this->validate(request(), ['body' => 'required']);
+        try {
+            $this->validate(request(), ['body' => 'required|spamfree']);
 
-        $reply->update(request(['body']));
+            $reply->update(request(['body']));
+        } catch (\Exception $e) {
+            return response(
+                'Sorry, your reply could not be saved at this time.', 422
+            );
+        }
+
     }
 
     /**
