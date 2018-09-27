@@ -30,4 +30,18 @@ class MentionUsersTest extends TestCase
 
         $this->assertTrue(true);
     }
+
+    /**
+     * @test
+     */
+    public function it_can_fetch_all_mentioned_users_with_a_given_characters()
+    {
+        create('App\User', ['name' => 'JohnDoe']);
+        create('App\User', ['name' => 'JaneDoe']);
+        create('App\User', ['name' => 'JohnDoe2']);
+
+        $results = $this->json('GET', 'api/users', ['name' => 'john']);
+
+        $this->assertCount(2, $results->json());
+    }
 }
