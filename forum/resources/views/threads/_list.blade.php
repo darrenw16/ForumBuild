@@ -15,12 +15,11 @@
                         </a>
                     </h4>
 
-                    <h5>Posted By:
-                        <a href="{{ route('profile', $thread->creator) }}">{{ $thread->creator->name }}</a>
+                    <h5>
+                        Posted By: <a href="{{ route('profile', $thread->creator) }}">{{ $thread->creator->name }}</a>
                     </h5>
-
-
                 </div>
+
                 <a href="{{ $thread->path() }}">
                     {{ $thread->replies_count }} {{ str_plural('reply', $thread->replies_count) }}
                 </a>
@@ -29,6 +28,10 @@
 
         <div class="panel-body">
             <div class="body">{{ $thread->body }}</div>
+        </div>
+
+        <div class="panel-footer">
+            {{ $thread->visits()->count() }} Visits
         </div>
     </div>
 @empty

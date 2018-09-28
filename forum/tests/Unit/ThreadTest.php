@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use App\Notifications\ThreadWasUpdated;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Redis;
 use Tests\TestCase;
 
 class ThreadTest extends TestCase
@@ -48,7 +49,7 @@ class ThreadTest extends TestCase
     public function a_thread_can_add_a_reply()
     {
         $this->thread->addReply([
-            'body' => 'Foobar',
+            'body'    => 'Foobar',
             'user_id' => 1
         ]);
 
@@ -64,7 +65,7 @@ class ThreadTest extends TestCase
             ->thread
             ->subscribe()
             ->addReply([
-                'body' => 'Foobar',
+                'body'    => 'Foobar',
                 'user_id' => 999
             ]);
 
@@ -132,5 +133,26 @@ class ThreadTest extends TestCase
 
             $this->assertFalse($thread->hasUpdatesFor($user));
         });
+    }
+
+    function a_thread_records_each_visit()
+    {
+
+        $thread = make('App\Thread', ['id' => 1]);
+
+        $thread->visits()->reset();
+
+
+        $this->assertSame(0, $thread->visits()->count());
+
+        $thread->visits()->record();
+
+        $this->assertEquals(1, $thread->visits()->count());
+
+        $thread->visits()->record();
+
+        $this->assertEquals(1, $thread->visits()->count());
+
+
     }
 }
