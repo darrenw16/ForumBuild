@@ -160,7 +160,6 @@ class Thread extends Model
             ->exists();
     }
 
-
     /**
      * Determine if the thread has been updated since the user last read it.
      *

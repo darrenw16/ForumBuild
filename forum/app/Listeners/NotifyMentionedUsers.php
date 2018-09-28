@@ -3,10 +3,8 @@
 namespace App\Listeners;
 
 use App\Events\ThreadReceivedNewReply;
-use App\Notifications\YouWhereMentioned;
+use App\Notifications\YouWereMentioned;
 use App\User;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class NotifyMentionedUsers
 {
@@ -18,10 +16,10 @@ class NotifyMentionedUsers
      */
     public function handle(ThreadReceivedNewReply $event)
     {
-        User::WhereIn('name', $event->reply->mentionedUsers())
+        User::whereIn('name', $event->reply->mentionedUsers())
             ->get()
             ->each(function ($user) use ($event) {
-                $user->notify(new YouWhereMentioned($event->reply));
+                $user->notify(new YouWereMentioned($event->reply));
             });
     }
 }

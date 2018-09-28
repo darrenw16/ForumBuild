@@ -36,6 +36,7 @@
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/forum/vendor/predis/predis" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/forum/vendor/ramsey/uuid" />
