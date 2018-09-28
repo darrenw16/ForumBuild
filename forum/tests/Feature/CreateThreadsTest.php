@@ -23,6 +23,14 @@ class CreateThreadsTest extends TestCase
     }
 
     /** @test */
+    function authenticated_users_must_first_confirm_thier_email_address_before_creating_threads()
+    {
+        $this->publishThread()
+            ->assertRedirect('/threads')
+            ->assertSessionHas('flash');
+    }
+
+    /** @test */
     function an_authenticated_user_can_create_new_forum_threads()
     {
         $this->signIn();
@@ -81,7 +89,7 @@ class CreateThreadsTest extends TestCase
         $this->signIn();
 
         $thread = create('App\Thread', ['user_id' => auth()->id()]);
-        $reply = create('App\Reply', ['thread_id' => $thread->id]);
+        $reply  = create('App\Reply', ['thread_id' => $thread->id]);
 
         $response = $this->json('DELETE', $thread->path());
 
