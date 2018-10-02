@@ -23,7 +23,7 @@ class ThreadsController extends Controller
      *
      * @param  Channel      $channel
      * @param ThreadFilters $filters
-     * @param Trending      $trending
+     * @param \App\Trending $trending
      * @return \Illuminate\Http\Response
      */
     public function index(Channel $channel, ThreadFilters $filters, Trending $trending)
@@ -34,9 +34,8 @@ class ThreadsController extends Controller
             return $threads;
         }
 
-
         return view('threads.index', [
-            'threads'  => $threads,
+            'threads' => $threads,
             'trending' => $trending->get()
         ]);
     }
@@ -59,18 +58,17 @@ class ThreadsController extends Controller
      */
     public function store(Request $request)
     {
-
         $this->validate($request, [
-            'title'      => 'required|spamfree',
-            'body'       => 'required|spamfree',
+            'title' => 'required|spamfree',
+            'body' => 'required|spamfree',
             'channel_id' => 'required|exists:channels,id'
         ]);
 
         $thread = Thread::create([
-            'user_id'    => auth()->id(),
+            'user_id' => auth()->id(),
             'channel_id' => request('channel_id'),
-            'title'      => request('title'),
-            'body'       => request('body')
+            'title' => request('title'),
+            'body' => request('body')
         ]);
 
         return redirect($thread->path())
@@ -80,8 +78,9 @@ class ThreadsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  integer     $channel
-     * @param  \App\Thread $thread
+     * @param  integer      $channel
+     * @param  \App\Thread  $thread
+     * @param \App\Trending $trending
      * @return \Illuminate\Http\Response
      */
     public function show($channel, Thread $thread, Trending $trending)
@@ -92,7 +91,7 @@ class ThreadsController extends Controller
 
         $trending->push($thread);
 
-        $thread->visits()->record();
+        $thread->increment('visits');
 
         return view('threads.show', compact('thread'));
     }
