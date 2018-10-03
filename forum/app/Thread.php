@@ -177,21 +177,37 @@ class Thread extends Model
         return $this->updated_at > cache($key);
     }
 
+    /**
+     * Get the route key name.
+     *
+     * @return string
+     */
     public function getRouteKeyName()
     {
         return 'slug';
     }
 
+    /**
+     * Set the proper slug attribute.
+     *
+     * @param string $value
+     */
     public function setSlugAttribute($value)
     {
-        $slug     = str_slug($value);
-        $original = $slug;
-        $count    = 2;
-
-        while (static::whereSlug($slug)->exists()) {
+        if (static::whereSlug($slug = str_slug($value))->exists()) {
             $slug = "{$slug}-{$this->id}";
         }
 
         $this->attributes['slug'] = $slug;
+    }
+
+    /**
+     * Mark the given reply as the best answer.
+     *
+     * @param Reply $reply
+     */
+    public function markBestReply(Reply $reply)
+    {
+        $this->update(['best_reply_id' => $reply->id]);
     }
 }

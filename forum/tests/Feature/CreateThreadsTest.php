@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\Activity;
-use App\Thread;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -89,8 +88,6 @@ class CreateThreadsTest extends TestCase
         $thread = $this->postJson(route('threads'), $thread->toArray())->json();
 
         $this->assertEquals("foo-title-{$thread['id']}", $thread['slug']);
-
-
     }
 
     /** @test */
@@ -104,7 +101,6 @@ class CreateThreadsTest extends TestCase
 
         $this->assertEquals("some-title-24-{$thread['id']}", $thread['slug']);
     }
-
 
     /** @test */
     function unauthorized_users_may_not_delete_threads()
@@ -125,7 +121,7 @@ class CreateThreadsTest extends TestCase
         $this->signIn();
 
         $thread = create('App\Thread', ['user_id' => auth()->id()]);
-        $reply  = create('App\Reply', ['thread_id' => $thread->id]);
+        $reply = create('App\Reply', ['thread_id' => $thread->id]);
 
         $response = $this->json('DELETE', $thread->path());
 
