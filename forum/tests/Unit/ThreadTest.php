@@ -21,12 +21,12 @@ class ThreadTest extends TestCase
     }
 
     /** @test */
-    function a_thread_can_make_a_string_path()
+    function a_thread_has_a_path()
     {
         $thread = create('App\Thread');
 
         $this->assertEquals(
-            "/threads/{$thread->channel->slug}/{$thread->id}", $thread->path()
+            "/threads/{$thread->channel->slug}/{$thread->slug}", $thread->path()
         );
     }
 
@@ -48,7 +48,7 @@ class ThreadTest extends TestCase
     public function a_thread_can_add_a_reply()
     {
         $this->thread->addReply([
-            'body' => 'Foobar',
+            'body'    => 'Foobar',
             'user_id' => 1
         ]);
 
@@ -64,7 +64,7 @@ class ThreadTest extends TestCase
             ->thread
             ->subscribe()
             ->addReply([
-                'body' => 'Foobar',
+                'body'    => 'Foobar',
                 'user_id' => 999
             ]);
 
