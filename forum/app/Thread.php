@@ -32,6 +32,10 @@ class Thread extends Model
      */
     protected $appends = ['isSubscribedTo'];
 
+    protected $casts = [
+        'locked' => 'boolean'
+    ];
+
     /**
      * Boot the model.
      */
@@ -101,14 +105,6 @@ class Thread extends Model
         event(new ThreadReceivedNewReply($reply));
 
         return $reply;
-    }
-
-    /**
-     * Lock the thread.
-     */
-    public function lock()
-    {
-        $this->update(['locked' => true]);
     }
 
     /**
