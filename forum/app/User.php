@@ -87,15 +87,20 @@ class User extends Authenticatable
      */
     public function confirm()
     {
-        $this->confirmed          = true;
+        $this->confirmed = true;
         $this->confirmation_token = null;
 
         $this->save();
     }
 
-    public function confirm()
+    /**
+     * Determine if the user is an administrator.
+     *
+     * @return bool
+     */
+    public function isAdmin()
     {
-        return in
+        return in_array($this->name, ['JohnDoe', 'JaneDoe']);
     }
 
     /**

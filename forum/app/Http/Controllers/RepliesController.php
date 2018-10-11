@@ -42,7 +42,7 @@ class RepliesController extends Controller
         }
 
         return $thread->addReply([
-            'body'    => request('body'),
+            'body' => request('body'),
             'user_id' => auth()->id()
         ])->load('owner');
     }

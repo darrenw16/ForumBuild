@@ -104,6 +104,14 @@ class Thread extends Model
     }
 
     /**
+     * Lock the thread.
+     */
+    public function lock()
+    {
+        $this->update(['locked' => true]);
+    }
+
+    /**
      * Apply all relevant thread filters.
      *
      * @param  Builder       $query
@@ -209,10 +217,5 @@ class Thread extends Model
     public function markBestReply(Reply $reply)
     {
         $this->update(['best_reply_id' => $reply->id]);
-    }
-
-    public function lock()
-    {
-        $this->update(['locked' => true]);
     }
 }
