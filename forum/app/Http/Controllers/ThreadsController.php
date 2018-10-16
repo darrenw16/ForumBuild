@@ -22,7 +22,7 @@ class ThreadsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param  Channel      $channel
+     * @param  Channel $channel
      * @param ThreadFilters $filters
      * @param \App\Trending $trending
      * @return \Illuminate\Http\Response
@@ -55,7 +55,7 @@ class ThreadsController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  \App\Rules\Recaptcha     $recaptcha
+     * @param  \App\Rules\Recaptcha $recaptcha
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, Recaptcha $recaptcha)
@@ -85,8 +85,8 @@ class ThreadsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  integer      $channel
-     * @param  \App\Thread  $thread
+     * @param  integer $channel
+     * @param  \App\Thread $thread
      * @param \App\Trending $trending
      * @return \Illuminate\Http\Response
      */
@@ -101,6 +101,18 @@ class ThreadsController extends Controller
         $thread->increment('visits');
 
         return view('threads.show', compact('thread'));
+    }
+
+    public function update($channel, Thread $thread)
+    {
+        $this->authorize('update', $thread);
+
+        $thread->update(request()->validate([
+            'title' => 'required|spamfree',
+            'body' => 'required|spamfree',
+        ]));
+
+        return $thread;
     }
 
     /**
@@ -126,7 +138,7 @@ class ThreadsController extends Controller
     /**
      * Fetch all relevant threads.
      *
-     * @param Channel       $channel
+     * @param Channel $channel
      * @param ThreadFilters $filters
      * @return mixed
      */
