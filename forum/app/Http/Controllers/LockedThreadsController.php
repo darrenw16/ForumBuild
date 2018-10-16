@@ -17,7 +17,7 @@ class LockedThreadsController extends Controller
     }
 
     /**
-     * Lock the given thread.
+     * Unlock the given thread.
      *
      * @param \App\Thread $thread
      */
