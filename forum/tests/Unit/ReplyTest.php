@@ -71,6 +71,6 @@ class ReplyTest extends TestCase
     {
         $reply = make('App\Reply', ['body' => '<script>alert("bad")</script><p>This is okay.</p>']);
 
-        $this->assertEquals("<p>This is okay.</p>", $reply->body);
+        $this->assertEquals('<p>This is okay.</p>', $reply->body);
     }
 }

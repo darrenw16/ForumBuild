@@ -54,17 +54,17 @@ class ThreadsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param \App\Rules\Recaptcha     $recaptcha
+     * @param \App\Rules\Recaptcha $recaptcha
      *
      * @return \Illuminate\Http\Response
      */
     public function store(Recaptcha $recaptcha)
     {
         request()->validate([
-            'title' => 'required|spamfree',
-            'body' => 'required|spamfree',
-            'channel_id' => 'required|exists:channels,id',
-            'g-recaptcha-response' => ['required', $recaptcha]
+            'title'                => 'required|spamfree',
+            'body'                 => 'required|spamfree',
+            'channel_id'           => 'required|exists:channels,id',
+            'g-recaptcha-response' => ['required', $recaptcha],
         ]);
 
         $thread = Thread::create([
@@ -85,8 +85,8 @@ class ThreadsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  integer      $channel
-     * @param  \App\Thread  $thread
+     * @param int           $channel
+     * @param \App\Thread   $thread
      * @param \App\Trending $trending
      *
      * @return \Illuminate\Http\Response
@@ -116,7 +116,7 @@ class ThreadsController extends Controller
 
         $thread->update(request()->validate([
             'title' => 'required',
-            'body' => 'required'
+            'body'  => 'required',
         ]));
 
         return $thread;
