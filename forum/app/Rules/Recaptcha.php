@@ -10,16 +10,17 @@ class Recaptcha implements Rule
     /**
      * Determine if the validation rule passes.
      *
-     * @param  string $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed  $value
+     *
      * @return bool
      */
     public function passes($attribute, $value)
     {
         return Zttp::asFormParams()->post('https://www.google.com/recaptcha/api/siteverify', [
-            'secret' => config('services.recaptcha.secret'),
+            'secret'   => config('services.recaptcha.secret'),
             'response' => $value,
-            'remoteip' => request()->ip()
+            'remoteip' => request()->ip(),
         ])->json()['success'];
     }
 

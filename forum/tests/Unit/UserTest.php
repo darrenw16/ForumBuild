@@ -2,13 +2,13 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class UserTest extends TestCase
 {
     use DatabaseMigrations;
-    
+
     /** @test */
     public function a_user_can_fetch_their_most_recent_reply()
     {
@@ -20,7 +20,7 @@ class UserTest extends TestCase
     }
 
     /** @test */
-    function a_user_can_determine_their_avatar_path()
+    public function a_user_can_determine_their_avatar_path()
     {
         $user = create('App\User');
 

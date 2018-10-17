@@ -7,6 +7,7 @@ use App\{Thread, Trending};
 class SearchController extends Controller
 {
     /**
+
      * Show the search results.
      *
      * @param  \App\Trending $trending
@@ -19,7 +20,7 @@ class SearchController extends Controller
         }
 
         return view('threads.search', [
-            'trending' => $trending->get()
+            'trending' => $trending->get(),
         ]);
     }
 }

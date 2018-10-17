@@ -95,7 +95,7 @@ class Reply extends Model
      */
     public function path()
     {
-        return $this->thread->path() . "#reply-{$this->id}";
+        return $this->thread->path()."#reply-{$this->id}";
     }
 
     /**
@@ -123,7 +123,6 @@ class Reply extends Model
     }
 
     /**
-     *
      * Determine if the current reply is marked as the best.
      *
      * @return bool

@@ -17,7 +17,7 @@ class FavoritesController extends Controller
     /**
      * Store a new favorite in the database.
      *
-     * @param  Reply $reply
+     * @param Reply $reply
      */
     public function store(Reply $reply)
     {
