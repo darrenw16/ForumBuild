@@ -19,7 +19,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'avatar_path'
+        'avatar_path',
     ];
 
     /**
@@ -39,7 +39,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'confirmed' => 'boolean'
+        'confirmed' => 'boolean',
     ];
 
     /**
@@ -119,7 +119,8 @@ class User extends Authenticatable
     /**
      * Get the path to the user's avatar.
      *
-     * @param  string $avatar
+     * @param string $avatar
+     *
      * @return string
      */
     public function getAvatarPathAttribute($avatar)
@@ -130,11 +131,12 @@ class User extends Authenticatable
     /**
      * Get the cache key for when a user reads a thread.
      *
-     * @param  Thread $thread
+     * @param Thread $thread
+     *
      * @return string
      */
     public function visitedThreadCacheKey($thread)
     {
-        return sprintf("users.%s.visits.%s", $this->id, $thread->id);
+        return sprintf('users.%s.visits.%s', $this->id, $thread->id);
     }
 }

@@ -13,30 +13,30 @@ class RegistrationTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    function a_confirmation_email_is_sent_upon_registration()
+    public function a_confirmation_email_is_sent_upon_registration()
     {
         Mail::fake();
 
         $this->post(route('register'), [
-            'name' => 'John',
-            'email' => 'john@example.com',
-            'password' => 'foobar',
-            'password_confirmation' => 'foobar'
+            'name'                  => 'John',
+            'email'                 => 'john@example.com',
+            'password'              => 'foobar',
+            'password_confirmation' => 'foobar',
         ]);
 
         Mail::assertQueued(PleaseConfirmYourEmail::class);
     }
 
     /** @test */
-    function user_can_fully_confirm_their_email_addresses()
+    public function user_can_fully_confirm_their_email_addresses()
     {
         Mail::fake();
 
         $this->post(route('register'), [
-            'name' => 'John',
-            'email' => 'john@example.com',
-            'password' => 'foobar',
-            'password_confirmation' => 'foobar'
+            'name'                  => 'John',
+            'email'                 => 'john@example.com',
+            'password'              => 'foobar',
+            'password_confirmation' => 'foobar',
         ]);
 
         $user = User::whereName('John')->first();
@@ -54,7 +54,7 @@ class RegistrationTest extends TestCase
     }
 
     /** @test */
-    function confirming_an_invalid_token()
+    public function confirming_an_invalid_token()
     {
         $this->get(route('register.confirm', ['token' => 'invalid']))
             ->assertRedirect(route('threads'))

@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use App\Thread;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
 
 class SearchTest extends TestCase
 {
@@ -22,7 +22,7 @@ class SearchTest extends TestCase
 
         do {
             sleep(2);
-            
+
             $results = $this->getJson("/threads/search?q={$search}")->json();
         } while (empty($results));
 

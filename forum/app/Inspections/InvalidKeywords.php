@@ -12,13 +12,14 @@ class InvalidKeywords
      * @var array
      */
     protected $keywords = [
-        'yahoo customer support'
+        'yahoo customer support',
     ];
 
     /**
      * Detect spam.
      *
-     * @param  string $body
+     * @param string $body
+     *
      * @throws \Exception
      */
     public function detect($body)

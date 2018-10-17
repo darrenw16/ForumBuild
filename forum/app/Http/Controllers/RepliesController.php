@@ -30,9 +30,10 @@ class RepliesController extends Controller
     /**
      * Persist a new reply.
      *
-     * @param  integer           $channelId
-     * @param  Thread            $thread
-     * @param  CreatePostRequest $form
+     * @param int               $channelId
+     * @param Thread            $thread
+     * @param CreatePostRequest $form
+     *
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function store($channelId, Thread $thread, CreatePostRequest $form)
@@ -42,8 +43,8 @@ class RepliesController extends Controller
         }
 
         return $thread->addReply([
-            'body' => request('body'),
-            'user_id' => auth()->id()
+            'body'    => request('body'),
+            'user_id' => auth()->id(),
         ])->load('owner');
     }
 
@@ -64,7 +65,8 @@ class RepliesController extends Controller
     /**
      * Delete the given reply.
      *
-     * @param  Reply $reply
+     * @param Reply $reply
+     *
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Reply $reply)

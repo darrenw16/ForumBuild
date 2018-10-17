@@ -10,7 +10,7 @@ class MentionUsersTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    function mentioned_users_in_a_reply_are_notified()
+    public function mentioned_users_in_a_reply_are_notified()
     {
         // Given we have a user, JohnDoe, who is signed in.
         $john = create('App\User', ['name' => 'JohnDoe']);
@@ -25,17 +25,17 @@ class MentionUsersTest extends TestCase
 
         // And JohnDoe replies to that thread and mentions @JaneDoe.
         $reply = make('App\Reply', [
-            'body' => 'Hey @JaneDoe check this out.'
+            'body' => 'Hey @JaneDoe check this out.',
         ]);
 
-        $this->json('post', $thread->path() . '/replies', $reply->toArray());
+        $this->json('post', $thread->path().'/replies', $reply->toArray());
 
         // Then @JaneDoe should receive a notification.
         $this->assertCount(1, $jane->notifications);
     }
 
     /** @test */
-    function it_can_fetch_all_mentioned_users_starting_with_the_given_characters()
+    public function it_can_fetch_all_mentioned_users_starting_with_the_given_characters()
     {
         create('App\User', ['name' => 'johndoe']);
         create('App\User', ['name' => 'johndoe2']);
