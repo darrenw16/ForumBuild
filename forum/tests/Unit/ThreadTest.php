@@ -139,6 +139,6 @@ class ThreadTest extends TestCase
     {
         $thread = make('App\Thread', ['body' => '<script>alert("bad")</script><p>This is okay.</p>']);
 
-        $this->assertEquals("<p>This is okay.</p>", $thread->body);
+        $this->assertEquals('<p>This is okay.</p>', $thread->body);
     }
 }

@@ -32,11 +32,11 @@ class UpdateThreadsTest extends TestCase
         $thread = create('App\Thread', ['user_id' => auth()->id()]);
 
         $this->patch($thread->path(), [
-            'title' => 'Changed'
+            'title' => 'Changed',
         ])->assertSessionHasErrors('body');
 
         $this->patch($thread->path(), [
-            'body' => 'Changed'
+            'body' => 'Changed',
         ])->assertSessionHasErrors('title');
     }
 

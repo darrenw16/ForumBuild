@@ -117,8 +117,9 @@ class Thread extends Model
     /**
      * Apply all relevant thread filters.
      *
-     * @param  Builder       $query
-     * @param  ThreadFilters $filters
+     * @param Builder       $query
+     * @param ThreadFilters $filters
+     *
      * @return Builder
      */
     public function scopeFilter($query, ThreadFilters $filters)
@@ -203,7 +204,8 @@ class Thread extends Model
     /**
      * Access the body attribute.
      *
-     * @param  string $body
+     * @param string $body
+     *
      * @return string
      */
     public function getBodyAttribute($body)
