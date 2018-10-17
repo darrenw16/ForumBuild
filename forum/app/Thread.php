@@ -116,7 +116,7 @@ class Thread extends Model
     /**
      * Apply all relevant thread filters.
      *
-     * @param  Builder       $query
+     * @param  Builder $query
      * @param  ThreadFilters $filters
      * @return Builder
      */
@@ -219,5 +219,11 @@ class Thread extends Model
     public function markBestReply(Reply $reply)
     {
         $this->update(['best_reply_id' => $reply->id]);
+    }
+
+    public function toSearchableArray()
+    {
+
+        return $this->toArray() + ['path' => $this->path()];
     }
 }
