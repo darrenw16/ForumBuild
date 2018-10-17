@@ -7,7 +7,6 @@ use App\Filters\ThreadFilters;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
-use Stevebauman\Purify\Purify;
 
 class Thread extends Model
 {
@@ -117,7 +116,7 @@ class Thread extends Model
     /**
      * Apply all relevant thread filters.
      *
-     * @param  Builder $query
+     * @param  Builder       $query
      * @param  ThreadFilters $filters
      * @return Builder
      */
@@ -199,6 +198,17 @@ class Thread extends Model
     }
 
     /**
+     * Access the body attribute.
+     *
+     * @param  string $body
+     * @return string
+     */
+    public function getBodyAttribute($body)
+    {
+        return \Purify::clean($body);
+    }
+
+    /**
      * Set the proper slug attribute.
      *
      * @param string $value
@@ -222,14 +232,13 @@ class Thread extends Model
         $this->update(['best_reply_id' => $reply->id]);
     }
 
+    /**
+     * Get the indexable data array for the model.
+     *
+     * @return array
+     */
     public function toSearchableArray()
     {
-
         return $this->toArray() + ['path' => $this->path()];
-    }
-
-    public function getBodyAttribute($body)
-    {
-        return \Purify::clean($body);
     }
 }

@@ -2,27 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Channel;
-use App\Filters\ThreadFilters;
-use App\Thread;
-use App\Trending;
-use Illuminate\Http\Request;
+use App\{Thread, Trending};
 
 class SearchController extends Controller
 {
     /**
-     * Display a listing of the resource
-     * @param Channel $channel
-     * @param ThreadFilters $filters
-     * @param Trending $trending
-     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * Show the search results.
+     *
+     * @param  \App\Trending $trending
+     * @return mixed
      */
     public function show(Trending $trending)
     {
-
-        if (\request()->expectsJson()) {
-            $threads = Thread::search(request('q'))->paginate(25);
-            return $threads;
+        if (request()->expectsJson()) {
+            return Thread::search(request('q'))->paginate(25);
         }
 
         return view('threads.search', [

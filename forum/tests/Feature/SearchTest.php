@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use App\Thread;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
 
 class SearchTest extends TestCase
 {
@@ -15,19 +15,19 @@ class SearchTest extends TestCase
     {
         config(['scout.driver' => 'algolia']);
 
-        $search = 'foobar';
-
         create('App\Thread', [], 2);
-        create('App\Thread', ['body' => "A thread with the {$search} term"], 2);
+        create('App\Thread', ['body' => 'A thread with the foobar term.'], 2);
 
         do {
-            sleep(2);
-            
-            $results = $this->getJson("/threads/search?q={$search}")->json();
+            // Account for latency.
+            sleep(.25);
+
+            $results = $this->getJson('/threads/search?q=foobar')->json()['data'];
         } while (empty($results));
 
-        $this->assertCount(2, $results['data']);
+        $this->assertCount(2, $results);
 
+        // Clean up.
         Thread::latest()->take(4)->unsearchable();
     }
 }

@@ -27,6 +27,7 @@
                         </form>
                     </div>
                 </div>
+
                 @if (count($trending))
                     <div class="panel panel-default">
                         <div class="panel-heading">
